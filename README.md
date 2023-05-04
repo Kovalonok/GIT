@@ -1,1 +1,233 @@
-# GIT
+Homework 1
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON - на сайте https://github.com под своей учёткой создал репозиторий JSON
+ 5. Клонировать репозиторий JSON на локальный компьютер - git clone https://github.com/Kovalonok/JSON.git
+ 6. Внутри локального JSON создать файл “new.json” - cd JSON, touch new.json
+ 7. Добавить файл под гит - git add new.json
+ 8. Закоммитить файл - git commit -m "new.json"
+ 9. Отправить файл на внешний GitHub репозиторий - git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+   
+    {
+	"user_first_name": "Kovalonok",
+	"user_name": "Denys",
+	"user_surname": "Gennadievich",
+	"user_age": 33,
+	"user_pets": 1,
+	"user_salary": "600USD"
+     }
+
+ 11. Отправить изменения на внешний репозиторий - git add new.json, git commit -m "new.json", git push
+ 12. Создать файл preferences.json - touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON.
+
+	{
+	"favorite_film": "Deja Vu",
+	"favorite_serial": "Friends",
+	"favorite_dish": "steak",
+	"favorite_season": "autumn",
+	"favorite_country": "Montenegro"
+	}
+
+ 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON - cat> skills.json
+
+{
+	"Course_topics": [
+		{
+			"topic": 1,
+			"title": "terminal_linux"
+		},
+		{
+			"topic": 2,
+			"title": "sql"
+		},
+		{	
+			"topic": 3,
+			"title": "git"
+		},
+		{
+			"topic": 4,
+			"title": "postman"
+		},
+		{	
+			"topic": 5,
+			"title": "client_server_architecture"
+		},
+		{
+			"topic": 6,
+			"title": "mobile_testing"
+		}
+	]
+}
+ 
+ 15. Отправить сразу 2 файла на внешний репозиторий - git add ., git commit -m "add preferences.json, skills.json", git push
+ 16. На веб интерфейсе создать файл bug_report.json - на сайте https://github.com под своей учёткой создал bug_report.json (нажать Add file, Create new file, ввести имя)
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе - нажать Commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON - нажимаем на файл, выбираем Edit this file
+
+	{         "bug_id": 1,
+	          "title": "The “TIPP!” text is extended beyond the hint button in the game scenes",
+	          "description": [
+		  {  
+					  "Preconditions": "Open_the_Build_67",
+	                            "Steps":
+	{ 					"1": ". Launch the DeepTown game in German ",
+        	                               	"2": "Start a new game",
+                	                       	"3": "Skip the video",
+                        	               	"4": "Pay attention to the hint button"
+	},
+	                            "Actual_result": "The “TIPP!” text is extended beyond the hint button in the game scen",
+	                            "Expected result": "The “TIPP!” text is displayed in the hint button in the game scenes",
+	                            "Priority": "low",
+	                            "Severity": "minor",
+	                            "Reproducibility": "always",
+	                            "Attachmants": "video_link"
+				  
+				  }
+			  ]
+	}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе - ввести описание изменений и нажать Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON - git pull
+
+XML
+ 21. Создать внешний репозиторий c названием XML - на сайте https://github.com под своей учёткой создал репозиторий XML
+ 22. Клонировать репозиторий XML на локальный компьютер - git clone https://github.com/Kovalonok/XML.git
+ 23. Внутри локального XML создать файл “new.xml” - cd XML, touch new.xml
+ 24. Добавить файл под гит - git add new.xml
+ 25. Закоммитить файл - git commit -m "new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий - git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+	
+<?xml version="1.0" encoding="UTF-8"?>
+<new>
+  <first_name>Kovalonok</first_name>
+  <name>Denys</name>
+  <surname>Gennadievich</surname>
+  <age>33</age> 
+ <pets>1</pets>
+  <salary>600</salary>
+</new>
+
+ 28. Отправить изменения на внешний репозиторий - git add ., git commit -m "add info to new.xml", git push
+ 29. Создать файл preferences.xml - cat> preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+	
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <favorite_film>Deja Vu</favorite_film>
+  <favorite_serial>Friends</favorite_serial>
+  <favorite_dish>steak</favorite_dish>
+  <favorite_season>autumn</favorite_season>
+  <favorite_country>Montenegro</favorite_country>
+</root>
+
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML - cat> skills.xml
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <Course_topics>
+    <topic>1</topic>
+    <title>terminal_linux</title>
+  </Course_topics>
+  <Course_topics>
+    <topic>2</topic>
+    <title>sql</title>
+  </Course_topics>
+  <Course_topics>
+    <topic>3</topic>
+    <title>git</title>
+  </Course_topics>
+  <Course_topics>
+    <topic>4</topic>
+    <title>postman</title>
+  </Course_topics>
+  <Course_topics>
+    <topic>5</topic>
+    <title>client_server_architecture</title>
+  </Course_topics>
+  <Course_topics>
+    <topic>6</topic>
+    <title>mobile_testing</title>
+  </Course_topics>
+</root>
+
+ 32. Сделать коммит в одну строку - git add . && git commit -m "preferences.xml, skills.xml"
+ 33. Отправить сразу 2 файла на внешний репозиторий - git push
+ 34. На веб интерфейсе создать файл bug_report.xml - на сайте https://github.com под своей учёткой создал bug_report.xml (нажать Add file, Create new file, ввести имя)
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+нажать Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML - нажимаем на файл, выбираем Edit this file
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <bug_id>1</bug_id>
+  <title>The “TIPP!” text is extended beyond the hint button in the game scenes</title>
+  <description>
+    <Preconditions>Open_the_Build_67</Preconditions>
+    <Steps>
+      <1>Launch the DeepTown game in German</1>
+      <2>Start a new game</2>
+      <3>Skip the video</3>
+      <4>Pay attention to the hint button</4>
+    </Steps>
+    <Actual_result>The “TIPP!” text is extended beyond the hint button in the game scene </Actual_result>
+    <Priority>low</Priority>
+    <Severity>minor</Severity>
+    <Reproducibility>always</Reproducibility>
+    <Attachmants>video_link</Attachmants>
+    <Expected_result>The “TIPP!” text is displayed in the hint button in the game scenes</Expected_result>
+  </description>
+</root>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе - ввести описание изменений и нажать Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML - git pull
+
+Homework 2
+
+На сайте https://github.com под своей учёткой создал репозиторий Git - git clone https://github.com/Kovalonok/GIT.git, cd Git
+1. На локальном репозитории создал ветки для:
+- Postman - git branch Postman
+- Jmeter - git branch Jmeter
+- CheckLists - git branch CheckLists
+- BugReports - git branch BugReports
+- SQL - git branch SQL
+- Charles - git branch Charles
+- Mobile testing - git branch MobileTesting
+2. Запушить все ветки на внешний репозиторий - git push origin --all
+3. В ветке BugReports сделать текстовый документ со структурой баг репорта - git checkout BugReports, cat> bug_report.txt
+
+	1.  Bug id;
+	2.  Title;
+	3.  Description;
+	4.  Preconditions;
+	5.  Steps;
+	6.  Actual_result
+	7.  Expected result;
+	8.  Priority;
+	9.  Reproducibility;
+	10. Attachmants.
+
+4. Запушить структуру багрепорта на внешний репозиторий - git add ., git commit -m "bug_report.txt", git push
+5. Вмержить ветку BugReports в Main - git checkout main, git merge Bug_Reports
+6. Запушить Main на внешний репозиторий - git push
+7. В ветке CheckLists набросать структуру чек листа - git checkout CheckLists, cat> checklist.txt
+
+	1. ID;
+	2. Title;
+	3. Precondition/Steps;
+	4. Expected Result;
+	5. Actual Result;
+	6. Comments.
+
+8. Запушить структуру на внешний репозиторий - git add checklist.txt, git commit -m "checklist.txt", git push -u origin CheckLists
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в Main - на сайте https://github.com под своей учёткой перейти в репозиторий GIT и выбрать ветку CheckLists,
+   нажать Compare pull request, нажать Create pull request, нажать Merge pull request, нажать Confirm merge
+10. Синхронизировать Внешнюю и Локальную ветки Main - git checkout main, git pull
